@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Manipulation des comptes bancaires</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css" >
+</head>
+<body>
+<h1>Manipulation des comptes bancaires</h1>
+	<h2>tracker un colis :</h2>
+	<form action="ShowColisServlet" method="post">
+		ID : <input type="number" name="ID">
+		<input type="submit" value="valider">
+	</form>
+	<h2>Creer un colis</h2>
+	<form action="AddColisServlet" method="post">
+		Poid : <input type="number" name="poid">
+		valeur : <input type="number" name="valeur">
+		origine : <input type="text" name="origine">
+		destination : <input type="text" name="destination">
+		<input type="submit" value="valider">
+	</form>
+	<h2>modifier position d'un colis:</h2>
+	<form action="ModifColisServlet" method="post">
+		ID : <input type="text" name="ID">
+		latitude : <input type="number" name="lat">
+		longitude : <input type="number" name="long">
+		emplacement : <input type="text" name="emplacement">
+		etat : <input type="text" name="etat">
+		<input type="submit" value="chercher">
+	</form>
+</body>
+</html>
